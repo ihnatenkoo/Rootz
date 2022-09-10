@@ -3,6 +3,9 @@ import s from './Intro.module.scss';
 import cn from 'classnames';
 
 import Button from '../ui/Button';
+import { ReactComponent as Headline } from '../../assets/Intro/headline.svg';
+import { ReactComponent as Parrot } from '../../assets/Intro/parrot.svg';
+import { ReactComponent as LocationIcon } from '../../assets/icons/location.svg';
 
 const Intro = () => {
 	const [value, setValue] = useState('');
@@ -15,11 +18,7 @@ const Intro = () => {
 		<section className={s.intro}>
 			<div className={cn(s.intro__wrapper, 'container')}>
 				<div className={s.intro__left_block}>
-					<img
-						className={s.intro__headline}
-						src="/src/assets/Intro/headline.svg"
-						alt="nature needs you"
-					/>
+					<Headline className={s.intro__headline} />
 					<p className={s.intro__description}>
 						The scale of the challenges facing our planet can seem daunting, but
 						we can all do something.
@@ -31,16 +30,17 @@ const Intro = () => {
 							value={value}
 							onChange={onChangeHandler}
 						/>
-						<img src="/src/assets/icons/location.svg" alt="location" />
+						<LocationIcon />
 						<Button className={s.intro__btn}>Search</Button>
 					</form>
 				</div>
 
 				<div>
-					<img src="/src/assets/Intro/parrot.svg" alt="parrot" />
+					<Parrot />
 				</div>
 			</div>
 		</section>
 	);
 };
+
 export default Intro;
