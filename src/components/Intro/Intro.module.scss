@@ -12,6 +12,10 @@
 		padding-top: 60px;
 	}
 
+	&__right_block {
+		position: relative;
+	}
+
 	&__headline {
 		margin-bottom: 50px;
 	}
@@ -31,6 +35,13 @@
 		top: 50%;
 		right: 8px;
 		transform: translateY(-50%);
+	}
+
+	&__card {
+		position: absolute;
+		bottom: -28px;
+		left: -54px;
+		z-index: 2;
 	}
 }
 
@@ -63,5 +74,6 @@ form {
 		top: 50%;
 		left: 21px;
 		transform: translateY(-50%);
+		z-index: 2;
 	}
 }

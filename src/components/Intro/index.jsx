@@ -5,6 +5,7 @@ import cn from 'classnames';
 import Button from '../ui/Button';
 import { ReactComponent as Headline } from '../../assets/Intro/headline.svg';
 import { ReactComponent as Parrot } from '../../assets/Intro/parrot.svg';
+import { ReactComponent as Card } from '../../assets/Intro/card.svg';
 import { ReactComponent as LocationIcon } from '../../assets/icons/location.svg';
 
 const Intro = () => {
@@ -35,8 +36,9 @@ const Intro = () => {
 					</form>
 				</div>
 
-				<div>
+				<div className={s.intro__right_block}>
 					<Parrot />
+					<Card className={s.intro__card} />
 				</div>
 			</div>
 		</section>
