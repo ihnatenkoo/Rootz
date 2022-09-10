@@ -1,5 +1,5 @@
 :root {
-	--whiteTotal: #ffffff;
+	--white: #ffffff;
 	--gray: #807c7c;
 	--grayPinky: #f7f3f4;
 	--blackTotal: #000000;
@@ -17,7 +17,7 @@
 	line-height: 32px;
 	font-weight: 400;
 
-	color: var(--black);
+	color: var(--blackTotal);
 	background-color: var(--totalWhite);
 
 	font-synthesis: none;
@@ -57,6 +57,12 @@ button {
 
 a {
 	text-decoration: inherit;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .container {
