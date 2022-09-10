@@ -42,6 +42,33 @@
 		bottom: -28px;
 		left: -54px;
 		z-index: 2;
+
+		&_icon {
+			position: absolute;
+			top: 32px;
+			left: 32px;
+			z-index: 3;
+		}
+
+		&_members {
+			font-weight: 700;
+			color: var(--whiteTotal);
+
+			p {
+				font-size: 20px;
+				line-height: 140%;
+			}
+
+			span {
+				font-size: 56px;
+				line-height: 80px;
+			}
+
+			position: absolute;
+			bottom: 41px;
+			left: 31px;
+			z-index: 3;
+		}
 	}
 }
 
