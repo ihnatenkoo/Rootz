@@ -5,6 +5,7 @@
 
 	&__wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 
@@ -56,6 +57,53 @@
 				&:hover {
 					fill: var(--red);
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1120px) {
+	.footer {
+		&__wrapper {
+			justify-content: space-around;
+		}
+	}
+}
+
+@media screen and (max-width: 574px) {
+	.footer {
+		padding: 42px 0 42px 30px;
+
+		&__headquarters,
+		&__social {
+			margin-bottom: 19px;
+			padding-top: 0;
+
+			h3 {
+				font-size: 18px;
+			}
+
+			address {
+				font-size: 12px;
+			}
+		}
+
+		&__wrapper {
+			justify-content: flex-start;
+			gap: 33px 50px;
+		}
+
+		&__contacts {
+			width: 100%;
+
+			h2 {
+				margin-bottom: 0;
+				font-size: 28px;
+			}
+
+			p {
+				width: inherit;
+				font-size: 12px;
 			}
 		}
 	}
