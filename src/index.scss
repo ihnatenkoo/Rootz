@@ -7,6 +7,7 @@
 	--blackText: #1e1a20;
 	--red: #f26c74;
 	--purple: #7675fd;
+	--coral: #ffbd9e;
 	--orange: #faa881;
 	--radiusS: 20px;
 	--radiusM: 30px;
@@ -66,7 +67,8 @@ ul {
 }
 
 .container {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	width: 1120px;
 	max-width: 100%;
 }

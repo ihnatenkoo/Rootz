@@ -13,6 +13,7 @@
 	}
 
 	&__right_block {
+		margin-right: -50px;
 		position: relative;
 	}
 
@@ -72,7 +73,7 @@
 	}
 }
 
-form {
+.form {
 	position: relative;
 	display: inline-block;
 

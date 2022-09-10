@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import s from './Intro.module.scss';
 import cn from 'classnames';
 
-import Button from '../ui/Button';
+import Button from '../ui/Button/Button';
 import { ReactComponent as Headline } from '../../assets/Intro/headline.svg';
 import { ReactComponent as Parrot } from '../../assets/Intro/parrot.svg';
 import { ReactComponent as Card } from '../../assets/Intro/card.svg';
@@ -35,7 +35,7 @@ const Intro = () => {
 						The scale of the challenges facing our planet can seem daunting, but
 						we can all do something.
 					</p>
-					<form>
+					<form className={s.form}>
 						<input
 							type="text"
 							placeholder="Find the place to help"
