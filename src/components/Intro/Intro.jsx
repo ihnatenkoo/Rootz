@@ -15,7 +15,7 @@ const Intro = () => {
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			const members = Math.floor(Math.random() * (11 - 1 + 1) + 1);
+			const members = Math.floor(Math.random() * (7 - 1 + 1) + 1);
 			setMembers((prevState) => prevState + members);
 		}, 2000);
 

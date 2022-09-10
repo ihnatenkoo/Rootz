@@ -23,9 +23,27 @@ const Footer = () => {
 					<div className={s.footer__social}>
 						<h3>Social media</h3>
 						<div className={s.footer__social_icons}>
-							<Twitter />
-							<Facebook />
-							<Linkedin />
+							<a
+								href="https://www.linkedin.com/in/dmytro-ihnatenko-a59254245/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Twitter />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/dmytro-ihnatenko-a59254245/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Facebook />
+							</a>
+							<a
+								href="https://www.linkedin.com/in/dmytro-ihnatenko-a59254245/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<Linkedin />
+							</a>
 						</div>
 					</div>
 				</div>
