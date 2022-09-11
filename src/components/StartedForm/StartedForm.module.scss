@@ -25,6 +25,8 @@
 
 	.form {
 		padding: 40px 55px;
+		position: relative;
+		max-width: 100%;
 		background-color: var(--grayPinky);
 		border-radius: 16px;
 
@@ -67,6 +69,102 @@
 		.button {
 			padding: 15px 0;
 			margin-top: 32px;
+		}
+
+		.form_icon_mobile {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 1120px) {
+	.main {
+		gap: 50px;
+
+		h2 {
+			margin-bottom: 20px;
+			font-size: 32px;
+			line-height: 150%;
+		}
+
+		p {
+			font-size: 17px;
+			line-height: 175%;
+		}
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.main {
+		padding: 42px 104px 104px 56px;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+
+		.left__block {
+			padding-top: 0;
+		}
+
+		p {
+			margin: 0 auto;
+			max-width: 65%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main {
+		padding: 42px 24px 54px;
+
+		.form {
+			input {
+				max-width: 100%;
+			}
+			h3 {
+				font-size: 28px;
+			}
+		}
+
+		.button {
+			min-width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.main {
+		padding: 42px 18px 56px;
+
+		h2 {
+			font-size: 28px;
+		}
+
+		p {
+			max-width: 100%;
+			font-size: 15px;
+		}
+
+		.form {
+			align-items: center;
+
+			.form_icon_mobile {
+				display: block;
+				position: absolute;
+				top: -12px;
+				right: -18px;
+				z-index: 2;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.main {
+		.form {
+			padding: 40px 24px;
+			h3 {
+				font-size: 24px;
+			}
 		}
 	}
 }

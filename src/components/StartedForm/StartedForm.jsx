@@ -3,6 +3,7 @@ import s from './StartedForm.module.scss';
 import cn from 'classnames';
 
 import Button from '../ui/Button/Button';
+import { ReactComponent as FormIconMobile } from '../../assets/icons/form-icon-mobile.svg';
 
 const StartedForm = () => {
 	const [name, setName] = useState('');
@@ -48,6 +49,7 @@ const StartedForm = () => {
 					placeholder="Email"
 				/>
 				<Button className={s.button}>Book a demo</Button>
+				<FormIconMobile className={s.form_icon_mobile} />
 			</form>
 		</section>
 	);
