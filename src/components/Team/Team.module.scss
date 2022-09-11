@@ -74,6 +74,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	.team__description {
+		margin-bottom: 40px;
+	}
 	.members {
 		height: 218px;
 	}

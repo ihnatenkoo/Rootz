@@ -91,6 +91,12 @@
 			font-size: 17px;
 			line-height: 175%;
 		}
+
+		.form {
+			h3 {
+				font-size: 24px;
+			}
+		}
 	}
 }
 
@@ -114,14 +120,12 @@
 
 @media screen and (max-width: 768px) {
 	.main {
+		margin-top: 110px;
 		padding: 42px 24px 54px;
 
 		.form {
 			input {
 				max-width: 100%;
-			}
-			h3 {
-				font-size: 28px;
 			}
 		}
 
@@ -162,9 +166,6 @@
 	.main {
 		.form {
 			padding: 40px 24px;
-			h3 {
-				font-size: 24px;
-			}
 		}
 	}
 }
