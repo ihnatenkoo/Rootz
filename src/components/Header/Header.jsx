@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import s from './Header.module.scss';
 import cn from 'classnames';
 
@@ -9,9 +9,21 @@ const navigation = ['Home', 'Our mission', 'Places', 'Team'];
 
 const Header = () => {
 	const [activeItem, setActiveItem] = useState(navigation[0]);
+	const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+	useEffect(() => {
+		isBurgerOpen
+			? (window.document.body.style.overflow = 'hidden')
+			: (window.document.body.style.overflow = 'auto');
+	}, [isBurgerOpen]);
 
 	const onClickHandler = (value) => {
 		setActiveItem(value);
+		setIsBurgerOpen(false);
+	};
+
+	const burgerClickHandler = () => {
+		setIsBurgerOpen((prev) => !prev);
 	};
 
 	return (
@@ -21,7 +33,7 @@ const Header = () => {
 				<Rootz />
 			</div>
 
-			<nav>
+			<nav className={cn({ [s.active]: isBurgerOpen })}>
 				<ul>
 					{navigation.map((path) => (
 						<li
@@ -32,9 +44,12 @@ const Header = () => {
 							{path}
 						</li>
 					))}
+					<button onClick={() => setIsBurgerOpen(false)}>Apply</button>
 				</ul>
 			</nav>
-			<button>Apply</button>
+			<div className={s.burger} onClick={burgerClickHandler}>
+				<span className={s.burger__item}>BURGER</span>
+			</div>
 		</header>
 	);
 };

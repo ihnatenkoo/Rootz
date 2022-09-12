@@ -1,6 +1,8 @@
 .intro {
 	padding-top: 181px;
-	height: 896px;
+	padding-left: 18px;
+	padding-right: 18px;
+	height: 914px;
 	background-color: var(--grayPinky);
 	background-position: 505px 500px;
 	position: relative;
@@ -143,6 +145,7 @@
 
 @media screen and (max-width: 575px) {
 	.intro {
+		margin-top: -70px;
 		&__right_block {
 			bottom: -173px;
 			left: 22%;
