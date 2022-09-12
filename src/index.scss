@@ -38,7 +38,10 @@ body {
 	margin: 0;
 	min-width: 320px;
 	min-height: 100vh;
-	overflow-x: hidden;
+}
+
+main {
+	overflow: hidden;
 }
 
 h1,
@@ -70,6 +73,7 @@ ul {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1120px;
+	padding: 0 18px;
+	width: 1156px;
 	max-width: 100%;
 }
