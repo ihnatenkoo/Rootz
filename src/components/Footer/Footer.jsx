@@ -2,7 +2,7 @@ import s from './Footer.module.scss';
 
 import { ReactComponent as Twitter } from '../../assets/icons/social/twitter.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/social/facebook.svg';
-import { ReactComponent as Linkedin } from '../../assets/icons/social/facebook.svg';
+import { ReactComponent as Linkedin } from '../../assets/icons/social/twitter.svg';
 
 const Footer = () => {
 	return (

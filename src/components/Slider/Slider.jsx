@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import s from './Slider.module.scss';
 
 const bgItems = [
-	{ id: 1, src: ' /src/assets/slider/card-1.png' },
-	{ id: 2, src: ' /src/assets/slider/card-2.png' },
-	{ id: 3, src: ' /src/assets/slider/card-3.png' },
-	{ id: 4, src: ' /src/assets/slider/card-4.png' },
-	{ id: 5, src: ' /src/assets/slider/card-5.png' },
+	{ id: 1, src: ' img/slider/card-1.png' },
+	{ id: 2, src: ' img/slider/card-2.png' },
+	{ id: 3, src: ' img/slider/card-3.png' },
+	{ id: 4, src: ' img/slider/card-4.png' },
+	{ id: 5, src: ' img/slider/card-5.png' },
 ];
 
 const slidesData = [
@@ -14,31 +14,31 @@ const slidesData = [
 		title: 'Save Water',
 		descr:
 			'	Taking on the issue of ensuring access to safe water require worldwide effort',
-		image: '/src/assets/slider/center-cards/card-1.png',
+		image: 'img/slider/center-cards/card-1.png',
 	},
 	{
 		title: 'Avoid Plastic',
 		descr:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quae laboriosam nam optio',
-		image: '/src/assets/slider/center-cards/card-2.png',
+		image: 'img/slider/center-cards/card-2.png',
 	},
 	{
 		title: 'Choose Organic',
 		descr:
 			'Repellat dolores unde autem molestias non qui totam ratione nostrum rem, sequi',
-		image: '/src/assets/slider/center-cards/card-3.png',
+		image: 'img/slider/center-cards/card-3.png',
 	},
 	{
 		title: 'Plants Trees',
 		descr:
 			'Sapiente quos et inventore ut vel qui culpa fugit odio provident ad ipsa perfer',
-		image: '/src/assets/slider/center-cards/card-4.png',
+		image: 'img/slider/center-cards/card-4.png',
 	},
 	{
 		title: 'Save Energy',
 		descr:
 			'Consectetur adipisicing elit. Vero placeat vitae atque aperiam! Repellat dolores',
-		image: '/src/assets/slider/center-cards/card-5.png',
+		image: 'img/slider/center-cards/card-5.png',
 	},
 ];
 
@@ -80,11 +80,7 @@ const Slider = () => {
 				</div>
 
 				<div className={s.center}>
-					<img
-						className={s.center__bg}
-						src="/src/assets/slider/card-main.png"
-						alt=""
-					/>
+					<img className={s.center__bg} src="img/slider/card-main.png" alt="" />
 
 					<div className={s.center__text} key={activeSlide}>
 						<h3>{slidesData[activeSlide].title}</h3>
@@ -101,7 +97,7 @@ const Slider = () => {
 
 				<nav>
 					<img
-						src="/src/assets/slider/left.svg"
+						src="img/slider/left.svg"
 						alt="arrow left"
 						onClick={() => onChangeSlide(-1)}
 					/>
@@ -110,7 +106,7 @@ const Slider = () => {
 						<span className={s.counter__right}>/ {slidesData.length}</span>
 					</div>
 					<img
-						src="/src/assets/slider/right.svg"
+						src="img/slider/right.svg"
 						alt="arrow right"
 						onClick={() => onChangeSlide(1)}
 					/>
