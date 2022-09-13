@@ -47,8 +47,11 @@ const Header = () => {
 					<button onClick={() => setIsBurgerOpen(false)}>Apply</button>
 				</ul>
 			</nav>
-			<div className={s.burger} onClick={burgerClickHandler}>
-				<span className={s.burger__item}>BURGER</span>
+			<div
+				className={cn(s.burger, { [s.active]: isBurgerOpen })}
+				onClick={burgerClickHandler}
+			>
+				<span className={s.burger__item}></span>
 			</div>
 		</header>
 	);

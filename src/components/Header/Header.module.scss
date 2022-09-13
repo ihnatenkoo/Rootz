@@ -77,6 +77,60 @@
 
 	.burger {
 		display: none;
+		width: 22px;
+
+		position: absolute;
+		right: 30px;
+		z-index: 1;
+		cursor: pointer;
+
+		&.active .burger__item::before {
+			transform-origin: left top;
+			transform: rotate(45deg) translateX(1px);
+		}
+
+		&.active .burger__item::after {
+			transform-origin: left bottom;
+			transform: rotate(-45deg) translateX(1px);
+		}
+
+		&.active .burger__item {
+			background: none;
+		}
+
+		&__item {
+			border-radius: 20px;
+			display: block;
+			width: 17px;
+			height: 3px;
+			background-color: var(--blackTotal);
+			position: absolute;
+			top: 0;
+			right: 0;
+			transition: all 0.2s linear;
+
+			&::before,
+			&::after {
+				border-radius: 20px;
+				content: '';
+				display: block;
+				width: 22px;
+				height: 3px;
+				background-color: var(--blackTotal);
+				position: absolute;
+				left: -5px;
+				z-index: 1;
+				transition: all 0.2s linear;
+			}
+
+			&::before {
+				top: -8px;
+			}
+
+			&::after {
+				bottom: -8px;
+			}
+		}
 	}
 }
 
